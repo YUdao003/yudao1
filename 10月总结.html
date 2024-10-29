@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10月总结与祝福</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fdf0e0;
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      color: #e74c3c;
+      font-size: 2.5em;
+      margin: 20px 0;
+    }
+    h2 {
+      color: #2980b9;
+      font-size: 1.8em;
+    }
+    p {
+      font-size: 1.2em;
+      line-height: 1.5em;
+    }
+    .highlight {
+      color: #d35400;
+      font-weight: bold;
+    }
+    .blessings {
+      font-size: 1.5em;
+      color: #27ae60;
+      margin-top: 40px;
+      animation: glow 1.5s infinite alternate;
+    }
+    @keyframes glow {
+      from { text-shadow: 0 0 10px #27ae60; }
+      to { text-shadow: 0 0 20px #2ecc71; }
+    }
+    .stat-box {
+      background-color: #fff;
+      padding: 15px;
+      margin: 20px auto;
+      width: 70%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+    .highlight-number {
+      font-size: 2em;
+      color: #e67e22;
+      font-weight: bold;
+    }
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #e67e22;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+<h1>10月总结与祝福</h1>
+
+<div class="stat-box">
+  <h2>群内活动统计</h2>
+  <p>本月共发出 <span class="highlight-number" id="messages">0</span> 条消息</p>
+  <p>参与活动人数 <span class="highlight-number" id="participants">0</span> 人</p>
+  <p>累计点赞数 <span class="highlight-number" id="likes">0</span> 次</p>
+</div>
+
+<p class="blessings">愿大家10月红红火火，11月大烫钱！</p>
+
+<button onclick="showBlessing()">点我接福！</button>
+
+<script>
+  // 模拟统计数据
+  document.getElementById('messages').innerText = Math.floor(Math.random() * 500 + 100);
+  document.getElementById('participants').innerText = Math.floor(Math.random() * 50 + 20);
+  document.getElementById('likes').innerText = Math.floor(Math.random() * 1000 + 500);
+
+  function showBlessing() {
+    alert('愿大家11月顺顺利利，财运滚滚来！');
+  }
+</script>
+
+</body>
+</html>
